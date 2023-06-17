@@ -9,6 +9,8 @@ click==8.1.3
 Django==4.2.2
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.2.2
+factory-boy==3.2.1
+Faker==18.10.1
 frozenlist==1.3.3
 idna==3.4
 multidict==6.0.4
@@ -19,8 +21,10 @@ Pillow==9.5.0
 platformdirs==3.5.3
 psycopg2==2.9.6
 PyJWT==2.7.0
+python-dateutil==2.8.2
 python-dotenv==1.0.0
 pytz==2023.3
+six==1.16.0
 sqlparse==0.4.4
 tomli==2.0.1
 typing_extensions==4.6.3

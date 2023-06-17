@@ -10,8 +10,6 @@ class UserController:
 	@staticmethod
 	def create_user(attrs):
 		profile_string = raw_upload_file_to_base64(attrs["profile_picture"])
-		# raw_data = base64_to_image_file(profile_string)
-		# print(raw_data)
 		attrs["profile_picture"] = profile_string
 
 		try:

@@ -67,3 +67,31 @@ python3 manage.py migrate
 ```shell
 python3 manage.py runserver
 ```
+---
+
+## Usage
+
+- The resources provided in this project are as follows
+```
+- /user/ POST to create user
+- /user/ PATCH to update user
+- /user/<str:email> GET to get the user information
+- /login/ POST with user name and password to get access token
+```
+
+- `/user/ POST` does not require any authorization, to create user.
+- Once we create a user, we could send a `POST` request to `/login/` to get `access` and `refresh` token
+- Now we could use this `access` token as `Bearer ${access}` as `Authorization` header in our request.
+
+---
+## Unit Tests
+
+I have written a test case for create user endpoint `/user/` `POST` using `factory-boy`
+and `faker`. 
+
+It is stored in the `tests/` directory in of `user_app`.
+
+Following is the command to run create user test case
+```shell
+python3 manage.py test user_app.tests.test_user_api
+```
