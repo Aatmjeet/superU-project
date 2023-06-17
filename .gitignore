@@ -1,0 +1,11 @@
+# to keep all my secrets safe
+.env
+# yeah you got it, i used pycharm xD
+.idea
+
+# let's be honest, you don't want caches
+__pycache__/
+
+
+# my little environment
+virtual
